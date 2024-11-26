@@ -4,6 +4,7 @@
 
         <item name="colorPrimary">@color/blue</item>
         <item name="colorOnPrimary">@color/gray</item>
+        <item name="colorPrimaryVariant">@color/gray</item>
         <item name="colorAccent">@color/cyan</item>
     </style>
 
