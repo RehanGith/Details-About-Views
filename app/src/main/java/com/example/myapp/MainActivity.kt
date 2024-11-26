@@ -21,5 +21,8 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        binding.btClick.setOnClickListener {
+            binding.tvHello.text = "Hello Rehan"
+        }
     }
 }
