@@ -11,6 +11,7 @@ import com.example.myapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
+    private var myName:MyName = MyName("Muhammad Rehan")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -21,8 +22,9 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        binding.myName = myName
         binding.btClick.setOnClickListener {
-            binding.tvHello.text = "Hello Rehan"
+            binding.myName?.name = "Rehan Mai"
         }
     }
 }
